@@ -13,7 +13,7 @@
     <meta name="keywords" content="{% block keywords %}{% endblock %}">
 
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/smile.png' %}">
-    <link rel="apple-touch-icon" type="image/jpg" href="{% static 'images/smile.png' %}">
+    <link rel="apple-touch-icon" type="image/png" href="{% static 'images/smile.png' %}">
 
     <!-- ================================
     Start CSS
@@ -43,6 +43,7 @@
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
     <script src="https://unpkg.com/swiper@7.0.5/swiper-bundle.min.js"></script>
     <script src="{% static 'js/script.js' %}"></script>
+    <script> console.log ( <img src="{{me.userprofile.avatar.url}}" alt="{{me.first_name|title}} {{me.last_name|title}} avatar">)</script>
     {% block extend_footer %}{%endblock%}
     <!-- ================================
     End Scripts
