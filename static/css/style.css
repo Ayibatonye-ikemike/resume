@@ -31,6 +31,9 @@ ul {
 img {
   max-width: 100%;
 }
+.logoCol img {
+  max-width: 5%;
+}
 a {
   color: inherit;
 }
@@ -705,7 +708,7 @@ body.navToggleActive {
     opacity: 0.8;
   }
   .logoCol img {
-  	width: 50px;
+  	max-width: 5%;
   }
   .fixedHeader .headerCol,  .headerCol {
   	padding: 10px 0;
