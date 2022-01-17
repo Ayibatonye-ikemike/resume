@@ -13,7 +13,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import django_heroku
-
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -41,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'ckeditor',
     'main',
+    'cloudinary',
 ]
 
 
@@ -142,3 +145,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR / "mediafiles")
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 django_heroku.settings(locals())
+cloudinary.config( cloud_name = 'ijawpikin', api_key = '757114698431382', api_secret = 'q9hm6CjDg2J6ww8nAMWD4xuuhsc')
